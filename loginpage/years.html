@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>University Ranking</title>
+      <link rel="stylesheet" href="rankstyle.css">
+      <link rel="stylesheet" href="css/rankstyle.css"/>
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <nav>
+         <label class="logo">UNIVERSITY RANKINGS</label>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+	    <li><a href="#">Universities</a></li>
+            <li>
+               <a class="active" href="years.html">Ranking By Years</a></li>
+              <li>
+               <a href="#">Ranking By indicators
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+                   <li><a href="#academic">Academic Reputation</a></li>
+    		   <li><a href="#emp">Employee Reputation</a></li>
+    		   <li><a href="#faculty">Faculty Student</a></li>
+    		   <li><a href="#citation">Citation Per Paper</a></li>
+   		   <li><a href="#stud">International Student Ratio</a></li>
+     		   <li><a href="#ratio">international Faculty Ratio</a></li>
+                </ul>
+                </li>
+	        <li>
+              
+            <a href="#">Login</a></li>
+           
+               <li>
+      </nav>
+<h1> UNIVERSITY RANKING BY YEARS </h1>
+<div class="years">
+<button onclick="myFunction()" class="dropbtn">Years</button>
+<div id="rankYears" class="years-content">
+	<a href="2011-2013.html">2011-2013 </a>
+	<a href="2014-2016.html">2014-2016</a>
+</div>
+</div>
+<script>
+function myFunction() {
+  document.getElementById("rankYears").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("years-content");
+    var i;
+    for (i = 0; i < years.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<div class ="content">
+    <div><strong>2017:</strong><br> UM<br>UKM<br>USM<br>UPM<br>UTM<UUM></div>
+    <div><strong>2018:</strong><br> UM<br>UKM<br>USM<br>UPM<br>UTM<UUM></div>
+    <div><strong>2019:</strong><br> UM<br>UKM<br>USM<br>UPM<br>UTM<UUM></div>
+</div>
+   </body>
+</html>

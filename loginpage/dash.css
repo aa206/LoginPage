@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.menu-bar{
+    background: #2c4949;
+    text-align: right;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.menu-bar ul li{
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu-bar ul li:hover{
+    background-color: #30B4BC;
+    border-radius: 3px;
+}
+
+.menu-bar .fa{
+    margin-right: 10px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #2c4949;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 160px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-top: 0;
+    text-align: center;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #30B4BC;
+}
+
+h1{
+    position: relative;
+    font-size: 35px;
+    font-weight: bold;
+    top: 24px;
+    margin: 25px;
+    color: black;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 4px white;
+  }
+  
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    top: 24px;
+    margin: 25px;
+    color: rgb(0, 100, 0);
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+.content > div {
+    background-color: #2c4949;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    color: white;
+    border-radius: 10px;
+}
+  
+.checked {
+    color: orange;
+    font-size: 10px;
+    transition: .5s;
+}
+  
+.content {
+    display: grid;
+    height: 300px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+}

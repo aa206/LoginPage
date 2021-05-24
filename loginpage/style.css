@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+  background-color:#30B4BC;
+}
+nav .logo{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav{
+  height: 70px;
+  background: #2c4949;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: #fff;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 16px;
+  background: #2c4949;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #fff;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+
+h1{
+  position: relative;
+  font-size: 38px;
+  font-weight: bold;
+  top: 24px;
+  margin: 25px;
+  color: #fdf266;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: bold;
+  top: 24px;
+  margin: 25px;
+  color: #fdf266;
+  margin-buttom: 24px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-shadow: 2px 2px 4px #000000;
+}
+.content > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+  
+}
+
+.checked {
+  color: orange;
+  font-size: 10px;
+  transition: .5s;
+}
+.content {
+  display: grid;
+  height: 300px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: transparent;
+  padding: 10px;
+  
+}
+
+.dropbtn {
+  background-color: #F5F5DC;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.years {
+  position: relative;
+  display: inline-block;
+  top: -45px;
+  margin-left: 700px;
+}
+
+.years-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.years-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.years a:hover {background-color: #ddd;}
+
+.show {display: block;}
+}
+
+.rankcontent {
+  display: grid;
+  height: 300px;
+  align-content: center;
+  grid-template-columns: 50px 50px 50px;
+  grid-gap: 30px;
+  background-color: transparent;
+  padding: 50px;
+}
+
+.rankcontent > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
